@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="SwagLabs Suite" thread-count="3" parallel="tests">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="SwagLabs Suite" thread-count="3" parallel="tests">"tests">
 	<listeners>
 		<listener class-name="io.qameta.allure.testng.AllureTestNg" />
 		<listener class-name="com.b2b.utils.TestListener" />
@@ -29,3 +30,4 @@
 
 
 </suite>
+
