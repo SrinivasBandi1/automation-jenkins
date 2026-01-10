@@ -116,16 +116,6 @@
             <artifactId>poi-ooxml</artifactId>
             <version>5.2.4</version>
         </dependency>
-        <dependency>
-        	<groupId>org.example</groupId>
-        	<artifactId>com.intelehealth</artifactId>
-        	<version>1.0-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-        	<groupId>automation-ai</groupId>
-        	<artifactId>automation-ai</artifactId>
-        	<version>0.0.1-SNAPSHOT</version>
-        </dependency>
     </dependencies>
 
     <build>
@@ -227,4 +217,5 @@
             </properties>
         </profile>
     </profiles>
+
 </project>
