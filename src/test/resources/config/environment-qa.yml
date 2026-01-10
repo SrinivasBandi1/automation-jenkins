@@ -1,0 +1,14 @@
+baseUrl: "https://www.saucedemo.com/v1/index.html"
+browser: "chrome"
+headless: false
+implicitWait: 10
+explicitWait: 15
+pageLoadTimeout: 30
+screenshotPath: "screenshots/qa"
+parallelExecution: true
+threadCount: 4
+retryCount: 2
+gridUrl: "http://localhost:4444/wd/hub"
+enableVideoRecording: false
+enableScreenshotOnFailure: true
+enableScreenshotOnSuccess: false 
