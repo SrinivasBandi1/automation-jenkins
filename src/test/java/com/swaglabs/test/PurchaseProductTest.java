@@ -119,7 +119,10 @@ public class PurchaseProductTest extends BaseTest {
 	public void F_testOrderCompletionDisplaysSuccessMessage() {
 		checkOutConfirmationPage.clickOnFinishButton();
 
-		Assert.assertEquals(checkOutConfirmationPage.getThankYouHeader(),expectedAssertionsProp.getProperty(Constants.HEADER_ORDER_CONFIRMATION) );
+//		Assert.assertEquals(checkOutConfirmationPage.getThankYouHeader(),expectedAssertionsProp.getProperty(Constants.HEADER_ORDER_CONFIRMATION) );
+		Assert.assertEquals(checkOutConfirmationPage.getThankYouHeader(),"THANK YOU FOR YOUR ORDE" );
+
+		
 	}
 	// @Test(priority = 1, description = "Verify user can create an order")
 	@Description("Test Description:verify when tutor create a course, 6 modules reflect on the tutor screen")
@@ -183,3 +186,4 @@ public class PurchaseProductTest extends BaseTest {
 		log.info("Ending of quitDriver method");
 	}
 }
+
