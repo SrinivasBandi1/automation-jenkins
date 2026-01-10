@@ -44,6 +44,8 @@ public class TestListener extends TestListenerAdapter {
 
 	@Override
 	public void onStart(ITestContext iTestContext) {
+		System.setProperty("allure.results.directory", "target/allure-results");
+        logger.info("Allure results directory: " + System.getProperty("allure.results.directory"));
 		logger.info("In onStart method " + iTestContext.getName());
 	}
 	public void saveScreenshotPNG(String screenshotType, WebDriver driver) {
