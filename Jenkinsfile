@@ -28,7 +28,7 @@ pipeline {
             emailext(
                 subject: "Build #${BUILD_NUMBER} - ${currentBuild.currentResult}",
                 body: "Job: ${JOB_NAME}\nBuild URL: ${BUILD_URL}",
-                to: "bandisrinivas765@gmail.com"
+                to: "srinivasbandi@intelehealth.org"
             )
         }
     }
