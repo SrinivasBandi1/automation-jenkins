@@ -105,8 +105,9 @@ public class EndToEndPurchaseTest extends BaseTest {
 		Assert.assertEquals(productPrice, totalPrice);
 		checkOutConfirmationPage.clickOnFinishButton();
 
-		Assert.assertEquals(checkOutConfirmationPage.getThankYouHeader(), "THANK YOU FOR YOUR ORDER");
+		Assert.assertEquals(checkOutConfirmationPage.getThankYouHeader(), "THANK YOU FOR YOUR ORDER!");
 
 	}
 
 }
+
