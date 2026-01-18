@@ -124,7 +124,9 @@ public class BaseTest {
 	public void launchWebSite(WebDriver driver,String url) {
 		log.info("Starting of initSiteLogin method");
 
-		driver.get(testDataProp.getProperty(url));
+	//	driver.get(testDataProp.getProperty(url));
+				driver.get(loginURL);
+
 
 		log.info("Ending of initSiteLogin method");
 	}
@@ -143,6 +145,7 @@ public class BaseTest {
 		return driver;
 	}
 }
+
 
 
 
