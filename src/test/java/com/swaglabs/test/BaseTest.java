@@ -30,9 +30,9 @@ public class BaseTest {
 	private String browser;
 	private static Map<WebDriversEnum, WebDriver> webDriverPool = new Hashtable<WebDriversEnum, WebDriver>();
 
-	@BeforeSuite(alwaysRun = true)
-	@Parameters({ "siteURL" })
-	public void initAutomation(@Optional("https://www.saucedemo.com/v1/index.html")String siteURL) {
+		@BeforeSuite(alwaysRun = true)
+	@Parameters({"browser", "siteURL" })
+	public void initAutomation(@Optional("chrome") String browser, @Optional("https://www.saucedemo.com/v1/index.html")String siteURL) {
 		this.initTestAutomation(siteURL, browser);
 
 		log.debug("Site URL :{} " + loginURL);
@@ -143,3 +143,4 @@ public class BaseTest {
 		return driver;
 	}
 }
+
