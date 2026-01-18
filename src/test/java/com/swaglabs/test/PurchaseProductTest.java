@@ -42,8 +42,8 @@ public class PurchaseProductTest extends BaseTest {
 		this.yourCartPage = new YourCartPage(driver);
 		this.checkOutInformationPage = new CheckOutInformationPage(driver);
 		this.checkOutConfirmationPage = new CheckOutConfirmationPage(driver);
-		System.out.println("=================================================================================="+siteURL)
-		System.out.println("=================================================================================="+testDataProp.getProperty(siteURL))
+		System.out.println("=================================================================================="+siteURL);
+		System.out.println("=================================================================================="+testDataProp.getProperty(siteURL));
 		launchWebSite(driver,siteURL);
 		loginPage.login();
 
@@ -188,6 +188,7 @@ Assert.assertEquals(checkOutConfirmationPage.getThankYouHeader(),expectedAsserti
 		log.info("Ending of quitDriver method");
 	}
 }
+
 
 
 
