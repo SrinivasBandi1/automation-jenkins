@@ -102,7 +102,7 @@ public class BaseTest {
 		}
 
 		BrowserDriverFactory factory = null;
-		if (browser == "grid")
+	    if (browser.equalsIgnoreCase("grid"))
 			factory = new BrowserDriverFactory(browser, this.isHeadLess);
 		else {
 			factory = new BrowserDriverFactory(browser, this.isHeadLess);
@@ -143,4 +143,5 @@ public class BaseTest {
 		return driver;
 	}
 }
+
 
