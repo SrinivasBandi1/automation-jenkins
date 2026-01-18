@@ -6,8 +6,8 @@
 		<listener class-name="com.b2b.utils.TestListener" />
 	</listeners>
 	<test name="SwagLabs End-to-End Flow in firefox" preserve-order="true">
-		<parameter name="browser" value="chrome" />
-		<parameter name="siteURL" value="https://www.saucedemo.com/v1/index.html" />
+		<parameter name="browser" value="${browser}" />
+        <parameter name="siteURL" value="${siteURL}" />
 		<classes>
 			<class name="com.swaglabs.test.PurchaseProductTest" />
 		</classes>
@@ -30,4 +30,5 @@
 
 
 </suite>
+
 
